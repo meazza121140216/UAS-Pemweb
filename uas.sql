@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 18, 2023 at 12:35 AM
+-- Generation Time: Dec 18, 2023 at 12:43 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -50,7 +50,7 @@ INSERT INTO `admin` (`id`, `nama`, `username`, `password`) VALUES
 CREATE TABLE `lapangan` (
   `id` int(255) NOT NULL,
   `nama` varchar(255) NOT NULL,
-  `tgl` varchar(255) NOT NULL,
+  `tgl` date NOT NULL,
   `jumlah` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -59,7 +59,39 @@ CREATE TABLE `lapangan` (
 --
 
 INSERT INTO `lapangan` (`id`, `nama`, `tgl`, `jumlah`) VALUES
-(1, 'meazza', '18', '1');
+(1, 'meazza', '2023-12-18', '1');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `lapangan`
+--
+ALTER TABLE `lapangan`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `lapangan`
+--
+ALTER TABLE `lapangan`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
