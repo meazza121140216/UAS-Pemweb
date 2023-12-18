@@ -7,10 +7,10 @@
 2. Lakukan ekstrak file kemudian pindahkan ke dalam folder htdocs.
 3. Mengakses "http://localhost/phpmyadmin/", lalu buat database baru sesuai dengan keinginan kita.
 4. Import database yang tersedia ke database yang sudah dibuat.
-5. Ubah pada isi file db.php menjadi "$db = mysqli_connect("localhost","root","","isi_nama_database");".
+5. Ubah pada isi file db.php menjadi "$db = mysqli_connect("localhost","root","","nama_database");".
 6. Program dapat dijalankan.
 
 Link Website
 <br>
-https://meazza-121140216.000webhostapp.com/
+https://meazza-121140216.000webhostapp.com/ (menggunakanan incognito)
 <br>
