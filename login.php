@@ -66,7 +66,7 @@ if (isset($_POST['login'])) {
           <input type="submit" value="Login" name="login" />
         </form>
       </div>
-      <script src="script/script.js"></script>
+      <script src="script/login.js"></script>
     </section>
   </body>
 </html>
